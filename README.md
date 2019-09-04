@@ -1,0 +1,1 @@
+Making a visual hierarchy of the Smashing Magazine website.
