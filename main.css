@@ -46,3 +46,532 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	overflow-x: hidden;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-rows: 200px 800px 500px 550px 500px 550px 200px 700px 400px 800px 100px 300px 1100px 100px 600px;
+}
+
+.nav {
+	background-color: white;
+	display: grid;
+	grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr 200px;
+	justify-items: center;
+	align-items: center;
+	grid-gap: 50px;
+}
+
+.nav div {
+	width: 100px;
+	height: 100px;
+	background: #999;
+}
+
+.nav div:first-of-type {
+	width: 60px;
+	height: 60px;
+	background: #ccc;
+}
+
+.nav div:last-of-type {
+	width: 100px;
+	height: 50px;
+	background: #ccc;
+}
+
+.headers-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr 1fr;
+	border-top: 1px solid black;
+}
+
+.headers-wrapper .latest-articles {
+	width: 200px;
+	height: 50px;
+	margin-top: 50px;
+	z-index: 1;
+	position: absolute;
+	background-color: #333;
+	display: flex;
+	justify-self: center;
+
+}
+
+.headers-wrapper div {
+	width: 350px;
+	height: 80px;
+	background-color: #333;
+	grid-row-start: 3;
+}
+
+.headers-wrapper header {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+.headers-wrapper h1 {
+	width: 150px;
+	height: 30px;
+	background: #ccc;
+	grid-row-start: 2;
+}
+
+.header-1,.header-2 {
+	border-bottom: 1px solid black;
+}
+
+.header-2 {
+	border-left: 1px solid black;
+} 
+
+.header-3, .header-4 { 
+	border-bottom: 1px solid black;
+}
+
+.header-4 {
+	border-left: 1px solid black;
+}
+
+.articles-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articles-wrapper article {
+	display: grid;
+	grid-template-rows: 50px 100px 50px 1fr;
+	justify-content: center;
+	align-self: center; 
+}
+
+.articles-wrapper h1 {
+	width: 300px;
+	height: 80px;
+	background: #333;
+}
+
+.articles-wrapper div {
+	width: 300px;
+	height: 200px;
+	background: #666;
+}
+
+.articles-wrapper span {
+	width: 100px;
+	height: 30px;
+}
+
+.articles-wrapper span:first-of-type {
+	background: #ccc;
+}
+
+.articles-wrapper span:last-of-type {
+	background: #ccc;
+}
+
+.ad-container-1, .ad-container-2 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.flatfile-ad {
+	display: flex;
+	justify-content: center;
+	border-right: 1px solid black;
+}
+
+.flatfile-ad div {
+	width: 300px;
+	height: 200px;
+	background: #666;
+	margin-top: 20px;
+}
+
+.members-ad {
+	background: white;
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.members-ad-img {
+	height: 200px;
+	width: 220px;
+	background: #666;
+	margin-top: 10px;
+}
+
+.members-ad h1 {
+	height: 50px;
+	width: 300px;
+	background: #333;
+	grid-row-start: 2;
+}
+
+.members-ad-text {
+	height: 100px;
+	width: 280px;
+	background: #ccc;
+}
+
+.members-ad div:last-of-type {
+	height: 50px;
+	width: 200px;
+	background: #333;
+	grid-row-start: 4;
+	margin-bottom: 10px;
+}
+
+.ad-container-2-article {
+	display: grid;
+	grid-template-rows: 50px 100px 50px 1fr;
+	justify-content: center;
+	align-self: center; 
+}
+
+
+.ad-container-2-article h1 {
+	width: 300px;
+	height: 80px;
+	background: #333;
+}
+
+.ad-container-2-article div {
+	width: 300px;
+	height: 200px;
+	background: #666;
+}
+
+.ad-container-2-article span {
+	width: 100px;
+	height: 30px;
+	background-color: #ccc;
+}
+
+.tv-ad {
+	background: white;
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	border-left: 1px solid black;
+}
+
+.tv-ad-img {
+	height: 200px;
+	width: 220px;
+	background: #666;
+	margin-top: 10px;
+}
+
+.tv-ad h1 {
+	height: 50px;
+	width: 300px;
+	background: #333;
+	grid-row-start: 2;
+}
+
+.tv-ad-text {
+	height: 100px;
+	width: 280px;
+	background: #ccc;
+}
+
+.tv-ad div:last-of-type {
+	height: 50px;
+	width: 200px;
+	background: #333;
+	grid-row-start: 4;
+	margin-bottom: 10px;
+}
+
+
+.link-1, .link-2, .link-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-1 div, .link-2 div, .link-3 div {
+	width: 200px;
+	height: 40px;
+	background: #ccc;
+}
+
+.ad-3 {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	grid-gap: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.ad-3 div:first-of-type {
+	width: 400px;
+	height: 50px;
+	grid-row-start: 2; 
+	background: #333;
+}
+
+.ad-3-div-2 {
+	width: 300px;
+	height: 100px; 
+	grid-row-start: 3;
+	background: #ccc;
+}
+
+.ad-3-div-3 {
+	grid-row-start: 4;
+	height: 50px;
+	width: 200px;
+	margin-top: 20px;
+	background: #333;
+}
+
+
+.ad-3 div:last-of-type {
+	height: 300px;
+	width: 400px;
+	grid-row-start: 5;
+	margin-top: 20px;
+	background: #666;
+}
+
+.person-of-week {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 10px;
+}
+
+.person-of-week-photo {
+	width: 250px;
+	height: 180px;
+	background-color: #666;
+	justify-self: center;
+	align-self: center; 
+}
+
+.person-of-week-text {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 50px 70px 180px;
+	border-left: 1px solid black;
+}
+
+.person-of-week-text h1 {
+	width: 150px;
+	height: 30px;
+	background-color: #999;
+	grid-row-start: 2;
+}
+
+.person-of-week-text div {
+	width: 600px;
+	height: 200px;
+	background-color: #ccc;
+	grid-row-start: span 2;
+}
+
+
+
+.articles-wrapper-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 80px;
+	justify-items: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.articles-2-grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr 3fr;
+}
+
+.articles-2-grid span {
+	width: 80px;
+	height: 30px;
+	background: #999;
+}
+
+.articles-2-grid h1 {
+	width: 150px;
+	height: 30px;
+	background: #333;
+	display: block;
+}
+
+.articles-2-grid div:last-of-type {
+	width: 300px;
+	height: 100px;
+	background: #ccc;
+}
+
+.ad-4 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+
+.ad-4-1st {
+	display: grid; 
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
+	border-right: 1px solid black;
+}
+
+.ad-4-1st div {
+	margin-left: 50px;
+}
+
+
+.ad-4-1st div:first-of-type {
+	background-color: #333;
+	width: 280px;
+	height: 50px;
+
+}
+
+.ad-4-1st .ad-4-text { 
+	background-color: #ccc;
+	width: 500px;
+	height: 70px;
+}
+
+.ad-4-1st div:last-of-type { 
+	background-color: #333;
+	width: 180px;
+	height: 60px;
+}
+
+.ad-4-2nd {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+
+.ad-4-2nd div {
+	background-color: #666;
+	height: 240px;
+	width: 200px;
+}
+
+
+.guides {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.guides-container {
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	justify-items: center;
+	border-bottom: 1px solid black;
+}
+
+.guides-container:last-of-type {
+	border-right: 1px solid black;
+}
+
+.guides-container h1 {
+	width: 280px;
+	height: 50px;
+	background: #666;
+	margin-top: 20px;
+}
+
+.guides-container div {
+	width: 200px;
+	height: 250px;
+	background: #999;
+}
+
+
+.news-ad {
+	display: grid;
+	grid-template-rows: 1fr 1fr 200px 1fr;
+	justify-items: center;
+	background: white;
+	grid-column-start: span 2; 
+	grid-gap: 10px;
+	border-bottom: 1px solid black;
+}
+
+.news-ad h1 {
+	width: 220px;
+	height: 40px;
+	background-color: #333;
+	margin-top: 40px;
+}
+
+.news-ad p {
+	width: 270px;
+	height: 70px;
+	background-color: #999;
+}
+
+.news-ad .news-img {
+	width: 250px;
+	height: 220px;
+	background-color: #666;
+}
+
+.news-ad div:last-of-type {
+	width: 280px;
+	height: 50px;
+	background-color: #333;
+	margin-top: 30px;
+}
+
+
+footer {
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	border-top: 1px solid black;
+}
+
+footer h1 {
+	width: 200px;
+	height: 30px;
+	background: #999;
+}
+
+footer .bulletpoint-list {
+	width: 900px;
+	height: 180px;
+	background: #666;
+
+}
+
+footer div:nth-of-type(2) {
+	width: 250px;
+	height: 100px;
+	background: #ccc;
+
+}
+
+footer div:last-of-type {
+	width: 290px;
+	height: 70px;
+	background: #ccc;
+}
+

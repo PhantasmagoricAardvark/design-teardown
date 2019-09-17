@@ -1,1 +1,1 @@
-Making a visual hierarchy of the Smashing Magazine website.
+Making a greyscale heatmap of the visual hierarchy of the Smashing Magazine website.
