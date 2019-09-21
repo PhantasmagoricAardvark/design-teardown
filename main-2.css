@@ -54,7 +54,7 @@ body {
 
 .grid {
 	display: grid;
-	grid-template-rows: 200px 800px 500px 550px 500px 550px 200px 700px 400px 800px 100px 300px 1100px 100px 600px;
+	grid-template-rows: 200px 1000px 500px 550px 500px 550px 200px 700px 400px 800px 100px 300px 1100px 100px 600px;
 }
 
 .nav {
@@ -87,27 +87,34 @@ body {
 .headers-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr; 
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 500px 500px;
 	border-top: 1px solid black;
 }
 
 .headers-wrapper .latest-articles {
-	width: 200px;
+	width: 300px;
 	height: 50px;
 	margin-top: 50px;
 	z-index: 1;
 	position: absolute;
-	background-color: #333;
+	border: 1px solid #333;
 	display: flex;
 	justify-self: center;
-
+	font-weight: bold;
+	font-family: Noto Sans;
+	font-size: 24px;
+	letter-spacing: -1px;
+	text-align: center;
 }
 
 .headers-wrapper div {
-	width: 350px;
-	height: 80px;
-	background-color: #333;
+	width: 400px;
+	height: 140px;
+	border: 1px solid #333;
 	grid-row-start: 3;
+	font-weight: bold;
+	font-family: Noto Sans;
+	font-size: 30px;
 }
 
 .headers-wrapper header {
@@ -117,10 +124,13 @@ body {
 	align-items: center;
 }
 .headers-wrapper h1 {
-	width: 150px;
+	width: 200px;
 	height: 30px;
-	background: #ccc;
+	border: 1px solid #ccc;
 	grid-row-start: 2;
+	font-style: italic;
+	font-family: Noto Sans;
+
 }
 
 .header-1,.header-2 {
@@ -142,6 +152,7 @@ body {
 .articles-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	font-family: Noto Sans;
 }
 
 .articles-wrapper article {
@@ -154,26 +165,29 @@ body {
 .articles-wrapper h1 {
 	width: 300px;
 	height: 80px;
-	background: #333;
+	border: 1px solid #333;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 21px; 
 }
 
 .articles-wrapper div {
 	width: 300px;
 	height: 200px;
-	background: #666;
+	border: 1px solid #666;
+	letter-spacing: 0px;
+	font-family: Crimson Text;
+	font-size: 20px;
 }
 
 .articles-wrapper span {
-	width: 100px;
+	width: 180px;
 	height: 30px;
 }
 
-.articles-wrapper span:first-of-type {
-	background: #ccc;
-}
-
-.articles-wrapper span:last-of-type {
-	background: #ccc;
+.articles-wrapper span:first-of-type, .articles-wrapper span:last-of-type {
+	border: 1px solid #ccc;
+	color: #333;
 }
 
 .ad-container-1, .ad-container-2 {
@@ -243,19 +257,26 @@ body {
 .ad-container-2-article h1 {
 	width: 300px;
 	height: 80px;
-	background: #333;
+	border: 1px solid #333;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 21px; 
 }
 
 .ad-container-2-article div {
 	width: 300px;
 	height: 200px;
-	background: #666;
+	border: 1px solid #666;
+	letter-spacing: 0px;
+	font-family: Crimson Text;
+	font-size: 20px;
 }
 
 .ad-container-2-article span {
-	width: 100px;
+	width: 180px;
 	height: 30px;
-	background-color: #ccc;
+	border: 1px solid #ccc;
+	color: #333;
 }
 
 .tv-ad {
@@ -371,17 +392,22 @@ body {
 }
 
 .person-of-week-text h1 {
-	width: 150px;
+	width: 250px;
 	height: 30px;
-	background-color: #999;
+	border: 1px solid #999;
 	grid-row-start: 2;
+	text-transform: uppercase;
+	font-family: Crimson Text;
+	font-size: 18px;
 }
 
 .person-of-week-text div {
-	width: 600px;
+	width: 800px;
 	height: 200px;
-	background-color: #ccc;
+	border: 1px solid #ccc;
 	grid-row-start: span 2;
+	font-family: Noto Sans;
+	font-size: 17px;
 }
 
 
@@ -393,6 +419,7 @@ body {
 	justify-items: center;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	font-family: Noto Sans;
 }
 
 .articles-2-grid {
@@ -401,22 +428,29 @@ body {
 }
 
 .articles-2-grid span {
-	width: 80px;
+	width: 240px;
 	height: 30px;
-	background: #999;
+	border: 1px solid #999;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .articles-2-grid h1 {
-	width: 150px;
+	width: 400px;
 	height: 30px;
-	background: #333;
+	border: 1px solid#333;
 	display: block;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .articles-2-grid div:last-of-type {
-	width: 300px;
+	width: 400px;
 	height: 100px;
-	background: #ccc;
+	border: 1px solid #ccc;
+	font-family: Noto Sans;
+	font-size: 17px;
 }
 
 .ad-4 {
